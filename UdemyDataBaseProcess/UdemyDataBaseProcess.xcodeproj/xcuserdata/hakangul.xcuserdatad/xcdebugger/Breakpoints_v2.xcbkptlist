@@ -1,0 +1,214 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Bucket
+   uuid = "E5E5C940-FFF3-47C9-862C-1B0915042506"
+   type = "1"
+   version = "2.0">
+   <Breakpoints>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            uuid = "402579FB-8915-4E9F-B808-0FF349256C03"
+            shouldBeEnabled = "No"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "UdemyDataBaseProcess/PersonsDao.swift"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "101"
+            endingLineNumber = "101"
+            landmarkName = "getPersonById(id:)"
+            landmarkType = "7">
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            uuid = "5E8A5B12-FE05-41A7-B8E4-028EEB83B1CC"
+            shouldBeEnabled = "No"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "UdemyDataBaseProcess/PersonsDao.swift"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "102"
+            endingLineNumber = "102"
+            landmarkName = "getPersonById(id:)"
+            landmarkType = "7">
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            uuid = "A6EAD4B5-D6AE-4301-91FD-06EA7D74BF1F"
+            shouldBeEnabled = "No"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "UdemyDataBaseProcess/PersonsDao.swift"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "103"
+            endingLineNumber = "103"
+            landmarkName = "getPersonById(id:)"
+            landmarkType = "7">
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            uuid = "BD86748E-A515-49C6-B0D9-770EBBB13580"
+            shouldBeEnabled = "Yes"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "UdemyDataBaseProcess/PersonsDao.swift"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "106"
+            endingLineNumber = "106"
+            landmarkName = "getPersonById(id:)"
+            landmarkType = "7">
+            <Locations>
+               <Location
+                  uuid = "BD86748E-A515-49C6-B0D9-770EBBB13580 - 66a683da29921195"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "UdemyDataBaseProcess.PersonsDao.getPersonById(id: Swift.Int) -&gt; ()"
+                  moduleName = "UdemyDataBaseProcess"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/hakangul/Projects/Swift/UdemyEducation/UdemyEducationMvvm/UdemyDataBaseProcess/UdemyDataBaseProcess/PersonsDao.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "83"
+                  endingLineNumber = "83"
+                  offsetFromSymbolStart = "2232">
+               </Location>
+               <Location
+                  uuid = "BD86748E-A515-49C6-B0D9-770EBBB13580 - 66a683da29921195"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "UdemyDataBaseProcess.PersonsDao.getPersonById(id: Swift.Int) -&gt; ()"
+                  moduleName = "UdemyDataBaseProcess"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/hakangul/Projects/Swift/UdemyEducation/UdemyEducationMvvm/UdemyDataBaseProcess/UdemyDataBaseProcess/PersonsDao.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "83"
+                  endingLineNumber = "83"
+                  offsetFromSymbolStart = "2396">
+               </Location>
+               <Location
+                  uuid = "BD86748E-A515-49C6-B0D9-770EBBB13580 - 66a683da29921682"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "UdemyDataBaseProcess.PersonsDao.getPersonById(id: Swift.Int) -&gt; ()"
+                  moduleName = "UdemyDataBaseProcess"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/hakangul/Projects/Swift/UdemyEducation/UdemyEducationMvvm/UdemyDataBaseProcess/UdemyDataBaseProcess/PersonsDao.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "106"
+                  endingLineNumber = "106"
+                  offsetFromSymbolStart = "2232">
+               </Location>
+               <Location
+                  uuid = "BD86748E-A515-49C6-B0D9-770EBBB13580 - 66a683da29921682"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "UdemyDataBaseProcess.PersonsDao.getPersonById(id: Swift.Int) -&gt; ()"
+                  moduleName = "UdemyDataBaseProcess"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/hakangul/Projects/Swift/UdemyEducation/UdemyEducationMvvm/UdemyDataBaseProcess/UdemyDataBaseProcess/PersonsDao.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "106"
+                  endingLineNumber = "106"
+                  offsetFromSymbolStart = "2396">
+               </Location>
+            </Locations>
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            uuid = "EBFC7284-AB2D-4B7B-9D64-694914D17331"
+            shouldBeEnabled = "Yes"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "UdemyDataBaseProcess/PersonsDao.swift"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "108"
+            endingLineNumber = "108"
+            landmarkName = "getPersonById(id:)"
+            landmarkType = "7">
+            <Locations>
+               <Location
+                  uuid = "EBFC7284-AB2D-4B7B-9D64-694914D17331 - 66a683da29921157"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "UdemyDataBaseProcess.PersonsDao.getPersonById(id: Swift.Int) -&gt; ()"
+                  moduleName = "UdemyDataBaseProcess"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/hakangul/Projects/Swift/UdemyEducation/UdemyEducationMvvm/UdemyDataBaseProcess/UdemyDataBaseProcess/PersonsDao.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "85"
+                  endingLineNumber = "85"
+                  offsetFromSymbolStart = "2732">
+               </Location>
+               <Location
+                  uuid = "EBFC7284-AB2D-4B7B-9D64-694914D17331 - 66a683da2992165c"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "UdemyDataBaseProcess.PersonsDao.getPersonById(id: Swift.Int) -&gt; ()"
+                  moduleName = "UdemyDataBaseProcess"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/hakangul/Projects/Swift/UdemyEducation/UdemyEducationMvvm/UdemyDataBaseProcess/UdemyDataBaseProcess/PersonsDao.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "108"
+                  endingLineNumber = "108"
+                  offsetFromSymbolStart = "2732">
+               </Location>
+            </Locations>
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            uuid = "6F8F7315-1AE7-4CF5-9587-43BD48B6EFA4"
+            shouldBeEnabled = "Yes"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "UdemyDataBaseProcess/PersonsDao.swift"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "124"
+            endingLineNumber = "124"
+            landmarkName = "getAllPersons()"
+            landmarkType = "7">
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            uuid = "558ADA73-2B5F-486D-AA9E-80637008C6DF"
+            shouldBeEnabled = "Yes"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "UdemyDataBaseProcess/PersonsDao.swift"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "83"
+            endingLineNumber = "83"
+            landmarkName = "getPersonByName(name:)"
+            landmarkType = "7">
+         </BreakpointContent>
+      </BreakpointProxy>
+   </Breakpoints>
+</Bucket>

@@ -1,0 +1,414 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 56;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		AE1045C32A54A78B007ED829 /* UdemyDataBaseProcessApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = AE1045C22A54A78B007ED829 /* UdemyDataBaseProcessApp.swift */; };
+		AE1045C52A54A78B007ED829 /* Main.swift in Sources */ = {isa = PBXBuildFile; fileRef = AE1045C42A54A78B007ED829 /* Main.swift */; };
+		AE1045C72A54A78C007ED829 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = AE1045C62A54A78C007ED829 /* Assets.xcassets */; };
+		AE1045CA2A54A78C007ED829 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = AE1045C92A54A78C007ED829 /* Preview Assets.xcassets */; };
+		AE1045D22A54A7D4007ED829 /* rehber.sqlite in Resources */ = {isa = PBXBuildFile; fileRef = AE1045D12A54A7D4007ED829 /* rehber.sqlite */; };
+		AE1045DF2A54A7E0007ED829 /* FMResultSet.m in Sources */ = {isa = PBXBuildFile; fileRef = AE1045D82A54A7E0007ED829 /* FMResultSet.m */; };
+		AE1045E02A54A7E0007ED829 /* FMDatabase.m in Sources */ = {isa = PBXBuildFile; fileRef = AE1045DA2A54A7E0007ED829 /* FMDatabase.m */; };
+		AE1045E12A54A7E0007ED829 /* FMDatabaseAdditions.m in Sources */ = {isa = PBXBuildFile; fileRef = AE1045DC2A54A7E0007ED829 /* FMDatabaseAdditions.m */; };
+		AE1045E22A54A7E0007ED829 /* FMDatabaseQueue.m in Sources */ = {isa = PBXBuildFile; fileRef = AE1045DD2A54A7E0007ED829 /* FMDatabaseQueue.m */; };
+		AE1045E32A54A7E0007ED829 /* FMDatabasePool.m in Sources */ = {isa = PBXBuildFile; fileRef = AE1045DE2A54A7E0007ED829 /* FMDatabasePool.m */; };
+		AE1045E72A54A9CC007ED829 /* MainViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = AE1045E62A54A9CC007ED829 /* MainViewModel.swift */; };
+		AE1045E92A54AA18007ED829 /* PersonsDao.swift in Sources */ = {isa = PBXBuildFile; fileRef = AE1045E82A54AA18007ED829 /* PersonsDao.swift */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXFileReference section */
+		AE1045BF2A54A78B007ED829 /* UdemyDataBaseProcess.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = UdemyDataBaseProcess.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		AE1045C22A54A78B007ED829 /* UdemyDataBaseProcessApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UdemyDataBaseProcessApp.swift; sourceTree = "<group>"; };
+		AE1045C42A54A78B007ED829 /* Main.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Main.swift; sourceTree = "<group>"; };
+		AE1045C62A54A78C007ED829 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		AE1045C92A54A78C007ED829 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
+		AE1045D12A54A7D4007ED829 /* rehber.sqlite */ = {isa = PBXFileReference; lastKnownFileType = file; path = rehber.sqlite; sourceTree = "<group>"; };
+		AE1045D32A54A7DF007ED829 /* UdemyDataBaseProcess-Bridging-Header.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "UdemyDataBaseProcess-Bridging-Header.h"; sourceTree = "<group>"; };
+		AE1045D42A54A7E0007ED829 /* FMDatabaseAdditions.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FMDatabaseAdditions.h; sourceTree = "<group>"; };
+		AE1045D52A54A7E0007ED829 /* FMResultSet.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FMResultSet.h; sourceTree = "<group>"; };
+		AE1045D62A54A7E0007ED829 /* FMDB.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FMDB.h; sourceTree = "<group>"; };
+		AE1045D72A54A7E0007ED829 /* FMDatabasePool.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FMDatabasePool.h; sourceTree = "<group>"; };
+		AE1045D82A54A7E0007ED829 /* FMResultSet.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FMResultSet.m; sourceTree = "<group>"; };
+		AE1045D92A54A7E0007ED829 /* FMDatabase.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FMDatabase.h; sourceTree = "<group>"; };
+		AE1045DA2A54A7E0007ED829 /* FMDatabase.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FMDatabase.m; sourceTree = "<group>"; };
+		AE1045DB2A54A7E0007ED829 /* FMDatabaseQueue.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FMDatabaseQueue.h; sourceTree = "<group>"; };
+		AE1045DC2A54A7E0007ED829 /* FMDatabaseAdditions.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FMDatabaseAdditions.m; sourceTree = "<group>"; };
+		AE1045DD2A54A7E0007ED829 /* FMDatabaseQueue.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FMDatabaseQueue.m; sourceTree = "<group>"; };
+		AE1045DE2A54A7E0007ED829 /* FMDatabasePool.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FMDatabasePool.m; sourceTree = "<group>"; };
+		AE1045E52A54A870007ED829 /* libsqlite3.tbd */ = {isa = PBXFileReference; lastKnownFileType = "sourcecode.text-based-dylib-definition"; name = libsqlite3.tbd; path = usr/lib/libsqlite3.tbd; sourceTree = SDKROOT; };
+		AE1045E62A54A9CC007ED829 /* MainViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainViewModel.swift; sourceTree = "<group>"; };
+		AE1045E82A54AA18007ED829 /* PersonsDao.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PersonsDao.swift; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		AE1045BC2A54A78B007ED829 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		AE1045B62A54A78B007ED829 = {
+			isa = PBXGroup;
+			children = (
+				AE1045C12A54A78B007ED829 /* UdemyDataBaseProcess */,
+				AE1045C02A54A78B007ED829 /* Products */,
+				AE1045E42A54A870007ED829 /* Frameworks */,
+			);
+			sourceTree = "<group>";
+		};
+		AE1045C02A54A78B007ED829 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				AE1045BF2A54A78B007ED829 /* UdemyDataBaseProcess.app */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		AE1045C12A54A78B007ED829 /* UdemyDataBaseProcess */ = {
+			isa = PBXGroup;
+			children = (
+				AE1045C22A54A78B007ED829 /* UdemyDataBaseProcessApp.swift */,
+				AE1045C42A54A78B007ED829 /* Main.swift */,
+				AE1045E62A54A9CC007ED829 /* MainViewModel.swift */,
+				AE1045E82A54AA18007ED829 /* PersonsDao.swift */,
+				AE1045C62A54A78C007ED829 /* Assets.xcassets */,
+				AE1045D02A54A79D007ED829 /* FMDB */,
+				AE1045C82A54A78C007ED829 /* Preview Content */,
+			);
+			path = UdemyDataBaseProcess;
+			sourceTree = "<group>";
+		};
+		AE1045C82A54A78C007ED829 /* Preview Content */ = {
+			isa = PBXGroup;
+			children = (
+				AE1045C92A54A78C007ED829 /* Preview Assets.xcassets */,
+			);
+			path = "Preview Content";
+			sourceTree = "<group>";
+		};
+		AE1045D02A54A79D007ED829 /* FMDB */ = {
+			isa = PBXGroup;
+			children = (
+				AE1045D92A54A7E0007ED829 /* FMDatabase.h */,
+				AE1045DA2A54A7E0007ED829 /* FMDatabase.m */,
+				AE1045D42A54A7E0007ED829 /* FMDatabaseAdditions.h */,
+				AE1045DC2A54A7E0007ED829 /* FMDatabaseAdditions.m */,
+				AE1045D72A54A7E0007ED829 /* FMDatabasePool.h */,
+				AE1045DE2A54A7E0007ED829 /* FMDatabasePool.m */,
+				AE1045DB2A54A7E0007ED829 /* FMDatabaseQueue.h */,
+				AE1045DD2A54A7E0007ED829 /* FMDatabaseQueue.m */,
+				AE1045D62A54A7E0007ED829 /* FMDB.h */,
+				AE1045D52A54A7E0007ED829 /* FMResultSet.h */,
+				AE1045D82A54A7E0007ED829 /* FMResultSet.m */,
+				AE1045D12A54A7D4007ED829 /* rehber.sqlite */,
+				AE1045D32A54A7DF007ED829 /* UdemyDataBaseProcess-Bridging-Header.h */,
+			);
+			path = FMDB;
+			sourceTree = "<group>";
+		};
+		AE1045E42A54A870007ED829 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				AE1045E52A54A870007ED829 /* libsqlite3.tbd */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		AE1045BE2A54A78B007ED829 /* UdemyDataBaseProcess */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = AE1045CD2A54A78C007ED829 /* Build configuration list for PBXNativeTarget "UdemyDataBaseProcess" */;
+			buildPhases = (
+				AE1045BB2A54A78B007ED829 /* Sources */,
+				AE1045BC2A54A78B007ED829 /* Frameworks */,
+				AE1045BD2A54A78B007ED829 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = UdemyDataBaseProcess;
+			productName = UdemyDataBaseProcess;
+			productReference = AE1045BF2A54A78B007ED829 /* UdemyDataBaseProcess.app */;
+			productType = "com.apple.product-type.application";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		AE1045B72A54A78B007ED829 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				BuildIndependentTargetsInParallel = 1;
+				LastSwiftUpdateCheck = 1430;
+				LastUpgradeCheck = 1430;
+				TargetAttributes = {
+					AE1045BE2A54A78B007ED829 = {
+						CreatedOnToolsVersion = 14.3.1;
+						LastSwiftMigration = 1430;
+					};
+				};
+			};
+			buildConfigurationList = AE1045BA2A54A78B007ED829 /* Build configuration list for PBXProject "UdemyDataBaseProcess" */;
+			compatibilityVersion = "Xcode 14.0";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = AE1045B62A54A78B007ED829;
+			productRefGroup = AE1045C02A54A78B007ED829 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				AE1045BE2A54A78B007ED829 /* UdemyDataBaseProcess */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		AE1045BD2A54A78B007ED829 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				AE1045CA2A54A78C007ED829 /* Preview Assets.xcassets in Resources */,
+				AE1045C72A54A78C007ED829 /* Assets.xcassets in Resources */,
+				AE1045D22A54A7D4007ED829 /* rehber.sqlite in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		AE1045BB2A54A78B007ED829 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				AE1045DF2A54A7E0007ED829 /* FMResultSet.m in Sources */,
+				AE1045C52A54A78B007ED829 /* Main.swift in Sources */,
+				AE1045C32A54A78B007ED829 /* UdemyDataBaseProcessApp.swift in Sources */,
+				AE1045E02A54A7E0007ED829 /* FMDatabase.m in Sources */,
+				AE1045E32A54A7E0007ED829 /* FMDatabasePool.m in Sources */,
+				AE1045E92A54AA18007ED829 /* PersonsDao.swift in Sources */,
+				AE1045E12A54A7E0007ED829 /* FMDatabaseAdditions.m in Sources */,
+				AE1045E22A54A7E0007ED829 /* FMDatabaseQueue.m in Sources */,
+				AE1045E72A54A9CC007ED829 /* MainViewModel.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin XCBuildConfiguration section */
+		AE1045CB2A54A78C007ED829 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++20";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 16.4;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		AE1045CC2A54A78C007ED829 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++20";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 16.4;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_OPTIMIZATION_LEVEL = "-O";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		AE1045CE2A54A78C007ED829 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CLANG_ENABLE_MODULES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_ASSET_PATHS = "\"UdemyDataBaseProcess/Preview Content\"";
+				DEVELOPMENT_TEAM = 5C3SB5DK2F;
+				ENABLE_PREVIEWS = YES;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
+				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
+				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.hakangul.UdemyDataBaseProcess;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_OBJC_BRIDGING_HEADER = "UdemyDataBaseProcess/FMDB/UdemyDataBaseProcess-Bridging-Header.h";
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		AE1045CF2A54A78C007ED829 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CLANG_ENABLE_MODULES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_ASSET_PATHS = "\"UdemyDataBaseProcess/Preview Content\"";
+				DEVELOPMENT_TEAM = 5C3SB5DK2F;
+				ENABLE_PREVIEWS = YES;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
+				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
+				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.hakangul.UdemyDataBaseProcess;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_OBJC_BRIDGING_HEADER = "UdemyDataBaseProcess/FMDB/UdemyDataBaseProcess-Bridging-Header.h";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		AE1045BA2A54A78B007ED829 /* Build configuration list for PBXProject "UdemyDataBaseProcess" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				AE1045CB2A54A78C007ED829 /* Debug */,
+				AE1045CC2A54A78C007ED829 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		AE1045CD2A54A78C007ED829 /* Build configuration list for PBXNativeTarget "UdemyDataBaseProcess" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				AE1045CE2A54A78C007ED829 /* Debug */,
+				AE1045CF2A54A78C007ED829 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = AE1045B72A54A78B007ED829 /* Project object */;
+}
