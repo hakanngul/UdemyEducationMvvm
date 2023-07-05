@@ -7,15 +7,20 @@
 
 import Foundation
 
-
-class PersonRegisterViewModel : ObservableObject {
-    
-    
-    func save(name:String, phone:String) {
-        let person = Person(name: name, phone: phone)
-        print("Person saved: \(person.name!) - \(person.phone!)")
+class PersonRegisterViewModel {
+    let db: FMDatabase?
+    init() {
+        let dbPath = NSSearchPathForDirectoriesInDomains(.documentDirectory, .userDomainMask, true).first!
+        let path = URL(fileURLWithPath: dbPath).appendingPathComponent("contact.sqlite")
+        db = FMDatabase(path: path.path)
     }
-    
 
+    func save(name: String, phone: String) {
+        db?.open()
+        do {
+            try db?.executeUpdate("INSERT INTO kisiler (kisi_ad,kisi_tel) VALUES (?,?)", values: [name, phone])
+        } catch {
+            print("Hata : \(error.localizedDescription)")
+        }
+    }
 }
-

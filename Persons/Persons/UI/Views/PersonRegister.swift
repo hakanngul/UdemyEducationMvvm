@@ -26,6 +26,7 @@ struct PersonRegister: View {
                 .textFieldStyle(RoundedBorderTextFieldStyle())
             Button(action: {
                 viewModel.save(name: tfPersonName, phone: tfPersonPhone)
+            
             }, label: {
                 Text("Save")
                     .foregroundColor(.white)

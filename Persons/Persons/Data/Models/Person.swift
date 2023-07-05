@@ -9,7 +9,7 @@ import Foundation
 
 
 class Person : Identifiable {
-    var id: String = UUID().uuidString
+    var id: Int?
     var name: String?
     var phone: String?
     
@@ -18,8 +18,8 @@ class Person : Identifiable {
         
     }
     
-    init(name: String, phone: String) {
-        
+    init(id: Int, name: String, phone: String) {
+        self.id = id
         self.name = name
         self.phone = phone
     }

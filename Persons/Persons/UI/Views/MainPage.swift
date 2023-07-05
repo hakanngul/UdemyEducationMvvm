@@ -1,46 +1,45 @@
-    //
-    //  ContentView.swift
-    //  Persons
-    //
-    //  Created by Hakan Gül on 02/07/2023.
-    //
+//
+//  ContentView.swift
+//  Persons
+//
+//  Created by Hakan Gül on 02/07/2023.
+//
 
 import SwiftUI
 
 struct MainPage: View {
-    
-    @State private  var  searchText = ""
+    @State private var searchText = ""
     @ObservedObject var viewModel = MainPageViewModel()
-    
-    
-    
+
     var body: some View {
         NavigationStack {
             List {
-                ForEach(viewModel.personList) {person in
+                ForEach(viewModel.personList) { person in
                     NavigationLink(destination: PersonDetail(person: person)) {
                         PersonRow(person: person)
                     }
                 }.onDelete(perform: viewModel.onDelete)
             }
-            
+
             .navigationTitle("Kişiler")
-            .toolbar{
+            .toolbar {
                 ToolbarItem(placement: .navigationBarTrailing) {
-                    NavigationLink(destination: PersonDetail()) {
+                    NavigationLink(destination: PersonRegister()) {
                         Image(systemName: "plus")
                     }
                 }
             }
-            .onAppear() {
+            .onAppear {
+                viewModel.dbCopy()
                 viewModel.loadPersons()
             }
-        }.searchable(text: $searchText , placement: .navigationBarDrawer(displayMode: .always),
-                     prompt: "Kişi Ara"
-        ).onChange(of: searchText) { res in
+        }.searchable(text: $searchText, placement: .navigationBarDrawer(displayMode: .always),
+                     prompt: "Kişi Ara").onChange(of: searchText) { res in
             viewModel.search(text: res)
         }
     }
+    
+    
 }
 
 struct ContentView_Previews: PreviewProvider {

@@ -7,16 +7,14 @@
 
 import SwiftUI
 
-
 struct PersonDetail: View {
+    @Environment(\.presentationMode) var presentationMode
     @State private var tfKisiAd = ""
     @State private var tfTel = ""
     let width = UIScreen.main.bounds.width
     
-    var person = Person(name: "", phone: "")
-   var viewModel = PersonDetailViewModel()
-    
-    
+    var person = Person()
+    var viewModel = PersonDetailViewModel()
     
     var body: some View {
         VStack(spacing: 80) {
@@ -25,7 +23,6 @@ struct PersonDetail: View {
                 .frame(width: 150, height: 150)
                 .foregroundColor(.blue)
                 .padding(.top, 30)
-            
             
             TextField("Kişi Ad", text: $tfKisiAd)
                 .textFieldStyle(RoundedBorderTextFieldStyle())
@@ -37,7 +34,12 @@ struct PersonDetail: View {
                 .padding()
             
             Button(action: {
-                viewModel.kisiGuncelle(id:"" , name: tfKisiAd, phone: tfTel)
+                viewModel.kisiGuncelle(id: person.id!, name: tfKisiAd, phone: tfTel)
+                // show popup
+                let alert = UIAlertController(title: "Kişi Güncellendi", message: "Kişi güncellendi", preferredStyle: .alert)
+                
+                self.presentationMode.wrappedValue.dismiss()
+                
             }) {
                 Text("Güncelle")
                     .font(.title)
@@ -49,16 +51,15 @@ struct PersonDetail: View {
             }
             
         }.navigationTitle("Kişi Detay")
-            .onAppear() {
+            .onAppear {
                 tfKisiAd = person.name!
                 tfTel = person.phone!
             }
     }
 }
 
-
-struct PersonDetail_Previews: PreviewProvider {
-    static var previews: some View {
-        PersonDetail()
-    }
-}
+//struct PersonDetail_Previews: PreviewProvider {
+//    static var previews: some View {
+//        PersonDetail()
+//    }
+//}
