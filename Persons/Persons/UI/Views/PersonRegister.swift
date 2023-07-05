@@ -10,6 +10,7 @@ import SwiftUI
 struct PersonRegister: View {
     @State private var tfPersonName = ""
     @State private var tfPersonPhone = ""
+    @Environment(\.presentationMode) var presentationMode
     
     var viewModel = PersonRegisterViewModel()
     
@@ -26,7 +27,10 @@ struct PersonRegister: View {
                 .textFieldStyle(RoundedBorderTextFieldStyle())
             Button(action: {
                 viewModel.save(name: tfPersonName, phone: tfPersonPhone)
-            
+                presentationMode.wrappedValue.dismiss()
+                // show alert
+                let alert = UIAlertController(title: "Success", message: "Person saved successfully", preferredStyle: .alert)
+                
             }, label: {
                 Text("Save")
                     .foregroundColor(.white)

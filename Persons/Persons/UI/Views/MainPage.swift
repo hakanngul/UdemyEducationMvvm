@@ -34,7 +34,7 @@ struct MainPage: View {
                 viewModel.loadPersons()
             }
         }.searchable(text: $searchText, placement: .navigationBarDrawer(displayMode: .always),
-                     prompt: "Kişi Ara").onChange(of: searchText) { res in
+            prompt: "Kişi Ara").onChange(of: searchText) { res in
             viewModel.search(text: res)
         }
     }
