@@ -15,7 +15,9 @@ struct MainPage: View {
         NavigationStack {
             List {
                 ForEach(viewModel.personList) { person in
-                    NavigationLink(destination: PersonDetail(person: person)) {
+                    NavigationLink(destination:
+                                    PersonDetail(personList: $viewModel.personList, person: person)
+                    ) {
                         PersonRow(person: person)
                     }
                 }.onDelete(perform: viewModel.onDelete)
@@ -34,12 +36,10 @@ struct MainPage: View {
                 viewModel.loadPersons()
             }
         }.searchable(text: $searchText, placement: .navigationBarDrawer(displayMode: .always),
-            prompt: "Kişi Ara").onChange(of: searchText) { res in
+                     prompt: "Kişi Ara").onChange(of: searchText) { res in
             viewModel.search(text: res)
         }
     }
-    
-    
 }
 
 struct ContentView_Previews: PreviewProvider {

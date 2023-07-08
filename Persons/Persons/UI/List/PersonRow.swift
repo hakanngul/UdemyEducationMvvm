@@ -8,7 +8,7 @@
 import SwiftUI
 
 struct PersonRow: View {
-    var person = Person()
+    var person = KisilerModel()
     var body: some View {
         VStack(alignment: .leading, spacing: 16) {
             Text(person.name ?? "Noname")

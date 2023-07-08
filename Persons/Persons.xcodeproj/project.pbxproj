@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		AE37B9F62A58A46B0065D203 /* Model.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = AE37B9F42A58A46B0065D203 /* Model.xcdatamodeld */; };
 		AE7ACA622A55D98900E970F7 /* FMDatabaseAdditions.m in Sources */ = {isa = PBXBuildFile; fileRef = AE7ACA5A2A55D98800E970F7 /* FMDatabaseAdditions.m */; };
 		AE7ACA632A55D98900E970F7 /* FMDatabaseQueue.m in Sources */ = {isa = PBXBuildFile; fileRef = AE7ACA5C2A55D98900E970F7 /* FMDatabaseQueue.m */; };
 		AE7ACA642A55D98900E970F7 /* FMDatabasePool.m in Sources */ = {isa = PBXBuildFile; fileRef = AE7ACA5D2A55D98900E970F7 /* FMDatabasePool.m */; };
@@ -28,6 +29,7 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		AE37B9F52A58A46B0065D203 /* Model.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = Model.xcdatamodel; sourceTree = "<group>"; };
 		AE7ACA562A55D98800E970F7 /* Persons-Bridging-Header.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "Persons-Bridging-Header.h"; sourceTree = "<group>"; };
 		AE7ACA572A55D98800E970F7 /* FMDatabaseAdditions.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FMDatabaseAdditions.h; sourceTree = "<group>"; };
 		AE7ACA582A55D98800E970F7 /* FMDatabasePool.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FMDatabasePool.h; sourceTree = "<group>"; };
@@ -73,6 +75,7 @@
 			children = (
 				AE7ACA6D2A55FCA500E970F7 /* rehber.sqlite */,
 				AE7ACA552A55D95C00E970F7 /* FMDB */,
+				AE37B9F42A58A46B0065D203 /* Model.xcdatamodeld */,
 			);
 			path = Database;
 			sourceTree = "<group>";
@@ -288,6 +291,7 @@
 				AEC58ED92A5236FD005A6204 /* PersonDetail.swift in Sources */,
 				AEC58ED12A523396005A6204 /* MainPageViewModel.swift in Sources */,
 				AEC58EB82A5230DC005A6204 /* MainPage.swift in Sources */,
+				AE37B9F62A58A46B0065D203 /* Model.xcdatamodeld in Sources */,
 				AEC58ED32A5233BC005A6204 /* PersonDetailViewModel.swift in Sources */,
 				AE7ACA632A55D98900E970F7 /* FMDatabaseQueue.m in Sources */,
 				AEC58EB62A5230DC005A6204 /* PersonsApp.swift in Sources */,
@@ -497,6 +501,19 @@
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
+
+/* Begin XCVersionGroup section */
+		AE37B9F42A58A46B0065D203 /* Model.xcdatamodeld */ = {
+			isa = XCVersionGroup;
+			children = (
+				AE37B9F52A58A46B0065D203 /* Model.xcdatamodel */,
+			);
+			currentVersion = AE37B9F52A58A46B0065D203 /* Model.xcdatamodel */;
+			path = Model.xcdatamodeld;
+			sourceTree = "<group>";
+			versionGroupType = wrapper.xcdatamodel;
+		};
+/* End XCVersionGroup section */
 	};
 	rootObject = AEC58EAA2A5230DC005A6204 /* Project object */;
 }

@@ -8,13 +8,15 @@
 import SwiftUI
 
 struct PersonDetail: View {
-    @Environment(\.presentationMode) var presentationMode
+    @Environment(\.presentationMode) private var presentationMode
+    @Binding var personList : [KisilerModel]
     @State private var tfKisiAd = ""
     @State private var tfTel = ""
-    let width = UIScreen.main.bounds.width
     
-    var person = Person()
+    var person = KisilerModel()
+    let width = UIScreen.main.bounds.width
     var viewModel = PersonDetailViewModel()
+    
     
     var body: some View {
         VStack(spacing: 80) {
@@ -34,12 +36,9 @@ struct PersonDetail: View {
                 .padding()
             
             Button(action: {
-                viewModel.kisiGuncelle(id: person.id!, name: tfKisiAd, phone: tfTel)
-                // show popup
-                let alert = UIAlertController(title: "Kişi Güncellendi", message: "Kişi güncellendi", preferredStyle: .alert)
-                
+                viewModel.kisiGuncelle(person: person,name: tfKisiAd, phone: tfTel)
                 self.presentationMode.wrappedValue.dismiss()
-                
+                personList.removeAll()
             }) {
                 Text("Güncelle")
                     .font(.title)
@@ -58,8 +57,3 @@ struct PersonDetail: View {
     }
 }
 
-//struct PersonDetail_Previews: PreviewProvider {
-//    static var previews: some View {
-//        PersonDetail()
-//    }
-//}

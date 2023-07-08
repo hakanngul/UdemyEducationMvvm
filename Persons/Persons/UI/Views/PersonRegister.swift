@@ -28,8 +28,6 @@ struct PersonRegister: View {
             Button(action: {
                 viewModel.save(name: tfPersonName, phone: tfPersonPhone)
                 presentationMode.wrappedValue.dismiss()
-                // show alert
-                let alert = UIAlertController(title: "Success", message: "Person saved successfully", preferredStyle: .alert)
                 
             }, label: {
                 Text("Save")

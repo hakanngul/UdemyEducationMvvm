@@ -8,19 +8,12 @@
 import Foundation
 
 class PersonRegisterViewModel {
-    let db: FMDatabase?
-    init() {
-        let dbPath = NSSearchPathForDirectoriesInDomains(.documentDirectory, .userDomainMask, true).first!
-        let path = URL(fileURLWithPath: dbPath).appendingPathComponent("contact.sqlite")
-        db = FMDatabase(path: path.path)
-    }
+    let context = persistentContainer.viewContext
 
     func save(name: String, phone: String) {
-        db?.open()
-        do {
-            try db?.executeUpdate("INSERT INTO kisiler (kisi_ad,kisi_tel) VALUES (?,?)", values: [name, phone])
-        } catch {
-            print("Hata : \(error.localizedDescription)")
-        }
+        let kisi = KisilerModel(context: context)
+        kisi.name = name
+        kisi.phone = phone
+        saveContext()
     }
 }
