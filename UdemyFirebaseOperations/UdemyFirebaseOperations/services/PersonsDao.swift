@@ -74,7 +74,6 @@ class PersonsDao {
                     }
                 }
             }
-            
             for p in persons {
                 print("\(p.name!) \(p.age!)")
             }
@@ -100,22 +99,18 @@ class PersonsDao {
         let query = refPersons.queryOrdered(byChild: "age")
             .queryStarting(atValue: first)
             .queryEnding(atValue: second)
-        
         printQuery(query: query)
     }
     
     func find(text: String) {
 //        let query = refPersons.queryOrdered(byChild: "name").queryEqual(toValue: text)
         let query = refPersons.queryOrdered(byChild: "name").queryStarting(atValue: text).queryEnding(atValue: text + "\u{f8ff}")
-        
         printQuery(query: query)
-        
     }
     
     private func printQuery(query: DatabaseQuery) {
         query.observe(.value, with: { snapshot in
             var persons = [Persons]()
-            
             if let snapShotValue = snapshot.value as? [String: AnyObject] {
                 for row in snapShotValue {
                     if let person = row.value as? NSDictionary {
@@ -123,7 +118,6 @@ class PersonsDao {
                     }
                 }
             }
-            
             for p in persons {
                 print("\(p.name!) \(p.age!)")
             }

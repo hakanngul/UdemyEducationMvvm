@@ -15,6 +15,7 @@
 		AE2835A82A5F4211009F1469 /* Persons.swift in Sources */ = {isa = PBXBuildFile; fileRef = AE2835A72A5F4211009F1469 /* Persons.swift */; };
 		AE2835AA2A5F4293009F1469 /* PersonsDao.swift in Sources */ = {isa = PBXBuildFile; fileRef = AE2835A92A5F4293009F1469 /* PersonsDao.swift */; };
 		AE2835AD2A5F4926009F1469 /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = AE2835AC2A5F4926009F1469 /* GoogleService-Info.plist */; };
+		AED2E88A2A60914B00E7F38F /* NotificationExample.swift in Sources */ = {isa = PBXBuildFile; fileRef = AED2E8892A60914B00E7F38F /* NotificationExample.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -27,6 +28,7 @@
 		AE2835A92A5F4293009F1469 /* PersonsDao.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PersonsDao.swift; sourceTree = "<group>"; };
 		AE2835AB2A5F48A2009F1469 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist; path = Info.plist; sourceTree = "<group>"; };
 		AE2835AC2A5F4926009F1469 /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
+		AED2E8892A60914B00E7F38F /* NotificationExample.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NotificationExample.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -94,6 +96,7 @@
 		AE2835A22A5F4165009F1469 /* views */ = {
 			isa = PBXGroup;
 			children = (
+				AED2E8892A60914B00E7F38F /* NotificationExample.swift */,
 			);
 			path = views;
 			sourceTree = "<group>";
@@ -205,6 +208,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				AED2E88A2A60914B00E7F38F /* NotificationExample.swift in Sources */,
 				AE2835A82A5F4211009F1469 /* Persons.swift in Sources */,
 				AE2835AA2A5F4293009F1469 /* PersonsDao.swift in Sources */,
 				AE2835902A5F3D29009F1469 /* MainApp.swift in Sources */,
