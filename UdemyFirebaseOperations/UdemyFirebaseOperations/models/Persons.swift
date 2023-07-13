@@ -6,3 +6,18 @@
 //
 
 import Foundation
+
+class Persons : Codable{
+    
+    var name: String?
+    var age: Int?
+
+    init() {}
+
+  
+
+    init(name: String, age: Int) {
+        self.name = name
+        self.age = age
+    }
+}
